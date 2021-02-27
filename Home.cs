@@ -20,37 +20,37 @@ namespace LibraryManagementSystem
             InitializeComponent();
             user = x;
             role = y;
-            metroLabel3.Text = user;
-            metroLabel5.Text = role;
+            label4.Text = user;
+            label5.Text = role;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Form a1 = new Members();
             a1.ShowDialog();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Form a1 = new Books();
             a1.ShowDialog();
         }
 
-        private void metroButton3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Form a1 = new IssuedBooks();
             a1.ShowDialog();
         }
 
-        private void metroButton4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             Form a1 = new Records();
             a1.ShowDialog();
         }
 
-        private void metroButton5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
-            if(role == "admin")
+            if (role == "admin")
             {
                 Form a1 = new SystemConfig();
                 a1.ShowDialog();
@@ -61,7 +61,7 @@ namespace LibraryManagementSystem
             }
         }
 
-        private void metroButton6_Click(object sender, EventArgs e)
+        private void button6_Click(object sender, EventArgs e)
         {
             this.Close();
         }

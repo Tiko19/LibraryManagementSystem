@@ -25,20 +25,20 @@ namespace LibraryManagementSystem
 
         private void reset()
         {
-            metroTextBox1.Text = null;
-            metroTextBox2.Text = null;
+            textBox1.Text = null;
+            textBox2.Text = null;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            if (metroTextBox1.Text == User && metroTextBox2.Text == Password)
+            if (textBox1.Text == User && textBox2.Text == Password)
             {
                 Form a1 = new Home(User, Role);
                 a1.ShowDialog();
                 this.Close();
             }
 
-            else if (metroTextBox1.Text == defaultUser && metroTextBox2.Text == defaultPass)
+            else if (textBox1.Text == defaultUser && textBox2.Text == defaultPass)
             {
                 Form a1 = new Home(defaultUser, "admin");
                 a1.ShowDialog();
@@ -52,7 +52,7 @@ namespace LibraryManagementSystem
             }
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }

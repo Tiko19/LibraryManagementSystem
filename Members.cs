@@ -17,27 +17,27 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             Form a1 = new MembersView();
             a1.ShowDialog();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             Form a1 = new MembersAdd();
             a1.ShowDialog();
         }
 
-        private void metroButton3_Click(object sender, EventArgs e)
+        private void button3_Click(object sender, EventArgs e)
         {
             Form a1 = new MembersModify();
             a1.ShowDialog();
         }
 
-        private void metroButton4_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-        }      
+        }
     }
 }

@@ -19,18 +19,18 @@ namespace LibraryManagementSystem
 
         private void reset()
         {
-            metroTextBox1.Text = null;
-            metroTextBox2.Text = null;
-            metroTextBox3.Text = null;
-            metroTextBox4.Text = null;
+            textBox1.Text = null;
+            textBox2.Text = null;
+            textBox3.Text = null;
+            textBox4.Text = null;
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
             reset();
         }
 
-        private void metroButton2_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
         }
