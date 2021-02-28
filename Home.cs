@@ -26,25 +26,25 @@ namespace LibraryManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form a1 = new Members();
+            Form a1 = new MembersMenu();
             a1.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form a1 = new Books();
+            Form a1 = new BooksMenu();
             a1.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form a1 = new IssuedBooks();
+            Form a1 = new BookRequest();
             a1.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form a1 = new Records();
+            Form a1 = new RecordsMenu();
             a1.ShowDialog();
         }
 

@@ -1,7 +1,7 @@
 ﻿
 namespace LibraryManagementSystem
 {
-    partial class Books
+    partial class BooksMenu
     {
         /// <summary>
         /// Required designer variable.

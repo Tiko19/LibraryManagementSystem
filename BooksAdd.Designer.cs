@@ -85,7 +85,7 @@ namespace LibraryManagementSystem
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(146, 414);
+            this.label5.Location = new System.Drawing.Point(146, 419);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 17);
             this.label5.TabIndex = 19;
@@ -94,7 +94,7 @@ namespace LibraryManagementSystem
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(146, 479);
+            this.label6.Location = new System.Drawing.Point(146, 484);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(55, 17);
             this.label6.TabIndex = 20;
@@ -162,14 +162,14 @@ namespace LibraryManagementSystem
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(335, 414);
+            this.textBox5.Location = new System.Drawing.Point(335, 419);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(331, 22);
             this.textBox5.TabIndex = 28;
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(335, 479);
+            this.textBox6.Location = new System.Drawing.Point(335, 484);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(331, 22);
             this.textBox6.TabIndex = 29;

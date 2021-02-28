@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Books.cs">
+    <Compile Include="BooksMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Books.Designer.cs">
-      <DependentUpon>Books.cs</DependentUpon>
+    <Compile Include="BooksMenu.Designer.cs">
+      <DependentUpon>BooksMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="BooksAdd.cs">
       <SubType>Form</SubType>
@@ -74,17 +74,23 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="BookRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookRequest.Designer.cs">
+      <DependentUpon>BookRequest.cs</DependentUpon>
+    </Compile>
     <Compile Include="IssuedBooks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IssuedBooks.Designer.cs">
       <DependentUpon>IssuedBooks.cs</DependentUpon>
     </Compile>
-    <Compile Include="Members.cs">
+    <Compile Include="MembersMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Members.Designer.cs">
-      <DependentUpon>Members.cs</DependentUpon>
+    <Compile Include="MembersMenu.Designer.cs">
+      <DependentUpon>MembersMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="MembersAdd.cs">
       <SubType>Form</SubType>
@@ -104,11 +110,11 @@
     <Compile Include="MembersView.Designer.cs">
       <DependentUpon>MembersView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Records.cs">
+    <Compile Include="RecordsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Records.Designer.cs">
-      <DependentUpon>Records.cs</DependentUpon>
+    <Compile Include="RecordsMenu.Designer.cs">
+      <DependentUpon>RecordsMenu.cs</DependentUpon>
     </Compile>
     <Compile Include="SystemConfig.cs">
       <SubType>Form</SubType>
@@ -148,8 +154,8 @@
     <Compile Include="Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Books.resx">
-      <DependentUpon>Books.cs</DependentUpon>
+    <EmbeddedResource Include="BooksMenu.resx">
+      <DependentUpon>BooksMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="BooksAdd.resx">
       <DependentUpon>BooksAdd.cs</DependentUpon>
@@ -160,11 +166,14 @@
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BookRequest.resx">
+      <DependentUpon>BookRequest.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="IssuedBooks.resx">
       <DependentUpon>IssuedBooks.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Members.resx">
-      <DependentUpon>Members.cs</DependentUpon>
+    <EmbeddedResource Include="MembersMenu.resx">
+      <DependentUpon>MembersMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MembersAdd.resx">
       <DependentUpon>MembersAdd.cs</DependentUpon>
@@ -175,8 +184,8 @@
     <EmbeddedResource Include="MembersView.resx">
       <DependentUpon>MembersView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Records.resx">
-      <DependentUpon>Records.cs</DependentUpon>
+    <EmbeddedResource Include="RecordsMenu.resx">
+      <DependentUpon>RecordsMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SystemConfig.resx">
       <DependentUpon>SystemConfig.cs</DependentUpon>

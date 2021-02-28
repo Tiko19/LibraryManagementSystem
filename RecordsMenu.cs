@@ -10,32 +10,25 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class Members : Form
+    public partial class RecordsMenu : Form
     {
-        public Members()
+        public RecordsMenu()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form a1 = new MembersView();
-            a1.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form a1 = new MembersAdd();
+            Form a1 = new IssuedBooks();
             a1.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
-        {
-            Form a1 = new MembersModify();
-            a1.ShowDialog();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
         }
