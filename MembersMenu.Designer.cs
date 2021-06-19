@@ -48,10 +48,10 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(156, 157);
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(114, 157);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(293, 217);
+            this.button1.Size = new System.Drawing.Size(320, 240);
             this.button1.TabIndex = 6;
             this.button1.Text = "View All";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(530, 157);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(293, 217);
+            this.button2.Size = new System.Drawing.Size(320, 240);
             this.button2.TabIndex = 7;
             this.button2.Text = "New Member";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@ namespace LibraryManagementSystem
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(156, 431);
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(114, 449);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(293, 217);
+            this.button3.Size = new System.Drawing.Size(320, 240);
             this.button3.TabIndex = 8;
             this.button3.Text = "Modify Member Details";
             this.button3.UseVisualStyleBackColor = true;
@@ -81,27 +81,27 @@ namespace LibraryManagementSystem
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(530, 431);
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(530, 449);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(293, 217);
+            this.button4.Size = new System.Drawing.Size(320, 240);
             this.button4.TabIndex = 9;
             this.button4.Text = "Return";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // Members
+            // MembersMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 728);
+            this.ClientSize = new System.Drawing.Size(1000, 750);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Members";
+            this.Name = "MembersMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Members";
             this.ResumeLayout(false);

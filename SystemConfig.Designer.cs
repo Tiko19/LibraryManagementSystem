@@ -38,7 +38,7 @@ namespace LibraryManagementSystem
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(66, 68);
+            this.label1.Location = new System.Drawing.Point(49, 63);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(323, 37);
             this.label1.TabIndex = 3;
@@ -46,10 +46,10 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(109, 204);
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(110, 244);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(293, 217);
+            this.button1.Size = new System.Drawing.Size(320, 240);
             this.button1.TabIndex = 4;
             this.button1.Text = "User Accounts";
             this.button1.UseVisualStyleBackColor = true;
@@ -57,10 +57,10 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(483, 204);
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(535, 244);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(293, 217);
+            this.button2.Size = new System.Drawing.Size(320, 240);
             this.button2.TabIndex = 5;
             this.button2.Text = "Return";
             this.button2.UseVisualStyleBackColor = true;
@@ -70,7 +70,7 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(889, 631);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);

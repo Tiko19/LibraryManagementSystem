@@ -37,10 +37,10 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(121, 160);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(293, 217);
+            this.button1.Size = new System.Drawing.Size(320, 240);
             this.button1.TabIndex = 0;
             this.button1.Text = "All Records";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,10 +48,10 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(461, 160);
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(551, 160);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(293, 217);
+            this.button2.Size = new System.Drawing.Size(320, 240);
             this.button2.TabIndex = 1;
             this.button2.Text = "Pending Books";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@ namespace LibraryManagementSystem
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(121, 429);
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(121, 459);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(293, 217);
+            this.button3.Size = new System.Drawing.Size(320, 240);
             this.button3.TabIndex = 2;
             this.button3.Text = "Return";
             this.button3.UseVisualStyleBackColor = true;
@@ -78,18 +78,18 @@ namespace LibraryManagementSystem
             this.label1.TabIndex = 3;
             this.label1.Text = "Records";
             // 
-            // Records
+            // RecordsMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(868, 707);
+            this.ClientSize = new System.Drawing.Size(1000, 750);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.Name = "Records";
+            this.Name = "RecordsMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Records";
             this.ResumeLayout(false);

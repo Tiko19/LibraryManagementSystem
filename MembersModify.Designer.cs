@@ -55,43 +55,47 @@ namespace LibraryManagementSystem
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(149, 181);
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(128, 187);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(149, 17);
+            this.label2.Size = new System.Drawing.Size(220, 25);
             this.label2.TabIndex = 12;
             this.label2.Text = "National ID / Passport:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(154, 252);
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(128, 258);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 17);
+            this.label3.Size = new System.Drawing.Size(116, 25);
             this.label3.TabIndex = 13;
             this.label3.Text = "First Name:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(154, 330);
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(128, 335);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 17);
+            this.label4.Size = new System.Drawing.Size(115, 25);
             this.label4.TabIndex = 14;
             this.label4.Text = "Last Name:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(154, 410);
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(128, 415);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(107, 17);
+            this.label5.Size = new System.Drawing.Size(162, 25);
             this.label5.TabIndex = 15;
             this.label5.Text = "Mobile Number:";
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(280, 502);
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(477, 543);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(118, 74);
             this.button1.TabIndex = 16;
@@ -101,8 +105,8 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(494, 502);
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(640, 543);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 74);
             this.button2.TabIndex = 17;
@@ -112,37 +116,41 @@ namespace LibraryManagementSystem
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(419, 181);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(477, 187);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(282, 22);
+            this.textBox1.Size = new System.Drawing.Size(348, 30);
             this.textBox1.TabIndex = 18;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(419, 252);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(477, 258);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(282, 22);
+            this.textBox2.Size = new System.Drawing.Size(348, 30);
             this.textBox2.TabIndex = 19;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(419, 330);
+            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(477, 335);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(282, 22);
+            this.textBox3.Size = new System.Drawing.Size(348, 30);
             this.textBox3.TabIndex = 20;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(419, 410);
+            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(477, 415);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(282, 22);
+            this.textBox4.Size = new System.Drawing.Size(348, 30);
             this.textBox4.TabIndex = 21;
             // 
             // MembersModify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(907, 682);
+            this.ClientSize = new System.Drawing.Size(1000, 700);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);

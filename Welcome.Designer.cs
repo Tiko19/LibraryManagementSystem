@@ -35,10 +35,10 @@ namespace LibraryManagementSystem
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(191, 308);
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(329, 422);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(196, 148);
+            this.button1.Size = new System.Drawing.Size(230, 160);
             this.button1.TabIndex = 0;
             this.button1.Text = "Sign in";
             this.button1.UseVisualStyleBackColor = true;
@@ -46,10 +46,10 @@ namespace LibraryManagementSystem
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(474, 308);
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(784, 422);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 148);
+            this.button2.Size = new System.Drawing.Size(230, 160);
             this.button2.TabIndex = 1;
             this.button2.Text = "Exit";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,7 +59,8 @@ namespace LibraryManagementSystem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(881, 597);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1366, 900);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

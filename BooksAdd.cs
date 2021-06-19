@@ -46,5 +46,10 @@ namespace LibraryManagementSystem
         {
             this.Close();
         }
+
+        private void BooksAdd_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -1,7 +1,6 @@
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe.config
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.exe
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\bin\Debug\LibraryManagementSystem.pdb
-C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csprojAssemblyReference.cache
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Home.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Properties.Resources.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.GenerateResource.cache
@@ -24,3 +23,4 @@ C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagem
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BookRequest.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.MembersMenu.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.RecordsMenu.resources
+C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.AssemblyReference.cache
