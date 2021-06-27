@@ -39,15 +39,8 @@ namespace LibraryManagementSystem.Classes
         {
             try
             {
-                string image = str8;
-                Bitmap bmp = new Bitmap(image);
-                FileStream fs = new FileStream(image, FileMode.Open, FileAccess.Read);
-                byte[] bimage = new byte[fs.Length];
-                fs.Read(bimage, 0, Convert.ToInt32(fs.Length));
-                fs.Close();
-
                 con.Open();
-                string addClient = "insert into students(firstname,lastname,sex,dob,grade,address,contact,picture) values(@firstname,@lastname,@sex,@dob,@grade,@address,@contact,@picture)";
+                string addClient = "insert into students(firstname,lastname,sex,dob,grade,address,contact) values(@firstname,@lastname,@sex,@dob,@grade,@address,@contact)";
                 MySqlCommand cmd = new MySqlCommand(addClient, con);
                 cmd.Parameters.AddWithValue("@firstname", str1);
                 cmd.Parameters.AddWithValue("@lastname", str2);
@@ -56,7 +49,6 @@ namespace LibraryManagementSystem.Classes
                 cmd.Parameters.AddWithValue("@grade", str5);
                 cmd.Parameters.AddWithValue("@address", str6);
                 cmd.Parameters.AddWithValue("@contact", str7);
-                cmd.Parameters.AddWithValue("@picture", bimage);
                 cmd.ExecuteNonQuery();
                 con.Close();
                 MessageBox.Show("Student has been added successfully!");

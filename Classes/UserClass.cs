@@ -42,8 +42,8 @@ namespace LibraryManagementSystem.Classes
             con.Open();
             string checkPassword = "select * from users where username = @username and password = @password";
             MySqlCommand cmd = new MySqlCommand(checkPassword, con);
-            cmd.Parameters.Add("@username", System.Data.MySqlDbType.NVarChar).Value = user.UserID;
-            cmd.Parameters.Add("@password", System.Data.SqlDbType.NVarChar).Value = user.Password;
+            //cmd.Parameters.Add("@username", System.Data.MySqlDbType.NVarChar).Value = user.UserID;
+            //cmd.Parameters.Add("@password", System.Data.SqlDbType.NVarChar).Value = user.Password;
             MySqlDataReader sdr = cmd.ExecuteReader();
 
             if (sdr.Read())
