@@ -206,10 +206,10 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BooksAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BooksAdd";
+            this.Text = "Add Book";
             this.Load += new System.EventHandler(this.BooksAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

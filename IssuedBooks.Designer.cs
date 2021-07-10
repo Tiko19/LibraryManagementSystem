@@ -53,7 +53,7 @@ namespace LibraryManagementSystem
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "IssuedBooks";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "IssuedBooks";
+            this.Text = "Issued Books";
             this.ResumeLayout(false);
             this.PerformLayout();
 
