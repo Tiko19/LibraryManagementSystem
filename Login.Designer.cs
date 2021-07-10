@@ -41,7 +41,7 @@ namespace LibraryManagementSystem
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(354, 407);
+            this.button1.Location = new System.Drawing.Point(335, 407);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(117, 75);
             this.button1.TabIndex = 6;
@@ -52,7 +52,7 @@ namespace LibraryManagementSystem
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(493, 407);
+            this.button2.Location = new System.Drawing.Point(509, 407);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 75);
             this.button2.TabIndex = 7;
@@ -95,7 +95,7 @@ namespace LibraryManagementSystem
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(323, 170);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(287, 30);
+            this.textBox1.Size = new System.Drawing.Size(303, 30);
             this.textBox1.TabIndex = 11;
             // 
             // textBox2
@@ -104,7 +104,7 @@ namespace LibraryManagementSystem
             this.textBox2.Location = new System.Drawing.Point(323, 250);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(287, 30);
+            this.textBox2.Size = new System.Drawing.Size(303, 30);
             this.textBox2.TabIndex = 12;
             // 
             // Login

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementSystem.Classes;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,10 +15,7 @@ namespace LibraryManagementSystem
     {
         private string defaultUser = "admin";
         private string defaultPass = "0134";
-        private string User { get; set; }
-        private string Password { get; set; }
-        private string Role { get; set; }
-        
+
         public Login()
         {
             InitializeComponent();
@@ -31,9 +29,15 @@ namespace LibraryManagementSystem
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == User && textBox2.Text == Password)
+            UserClass userClass = new UserClass();
+            UserClass.User user  = new UserClass.User();
+            user.Username = textBox1.Text;
+            user.Password = textBox2.Text;
+
+            if (userClass.CheckPass(user) == true)
             {
-                Form a1 = new Home(User, Role);
+                user.Role = userClass.CheckRole(user);
+                Form a1 = new Home(user.Username, user.Role);
                 a1.ShowDialog();
                 this.Close();
             }

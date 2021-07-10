@@ -1,95 +1,126 @@
-﻿using MySql.Data.MySqlClient;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace LibraryManagementSystem.Classes
 {
     class BookClass
     {
-        private MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=schoolsystem");
+        private string connectionString = @"Data Source=ENVY\SQLEXPRESS;Initial Catalog=LibraryDB;Integrated Security=True;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+
+        public class Book
+        {
+            public int ID { get; set; }
+            public string ISBN { get; set; }
+            public string Title { get; set; }
+            public string Author { get; set; }
+            public string Genre { get; set; }
+            public string Edition { get; set; }
+            public string Copies { get; set; }
+        }
 
         /******Method to load database******/
         public DataTable GetDataSet()
         {
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                string load = "select * from students";
+                try
+                {
+                    string load = "select * from Books";
 
-                MySqlDataAdapter adp = new MySqlDataAdapter(load, con);
-                MySqlCommandBuilder commandBuilder = new MySqlCommandBuilder(adp);
+                    SqlDataAdapter adp = new SqlDataAdapter(load, con);
+                    SqlCommandBuilder commandBuilder = new SqlCommandBuilder(adp);
 
-                DataTable table = new DataTable();
-                adp.Fill(table);
-                return table;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString());
-                return null;
+                    DataTable table = new DataTable();
+                    adp.Fill(table);
+                    return table;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    return null;
+                }
             }
         }
 
         /******Method to add record to database******/
-        public void Add(string str1, string str2, string str3, string str4, string str5, string str6, string str7, string str8)
+        public void BookAdd(Book book)
         {
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                con.Open();
-                string addClient = "insert into students(firstname,lastname,sex,dob,grade,address,contact) values(@firstname,@lastname,@sex,@dob,@grade,@address,@contact)";
-                MySqlCommand cmd = new MySqlCommand(addClient, con);
-                cmd.Parameters.AddWithValue("@firstname", str1);
-                cmd.Parameters.AddWithValue("@lastname", str2);
-                cmd.Parameters.AddWithValue("@sex", str3);
-                cmd.Parameters.AddWithValue("@dob", str4);
-                cmd.Parameters.AddWithValue("@grade", str5);
-                cmd.Parameters.AddWithValue("@address", str6);
-                cmd.Parameters.AddWithValue("@contact", str7);
-                cmd.ExecuteNonQuery();
-                con.Close();
-                MessageBox.Show("Student has been added successfully!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error! " + ex.ToString());
+                try
+                {
+                    con.Open();
+                    string addBook = "insert into Books(ISBN, Title, Author, Genre, Edition, Copies) values(@isbn, @title, @author, @genre, @edition, @copies)";
+                    SqlCommand cmd = new SqlCommand(addBook, con);
+                    cmd.Parameters.Add("@isbn", SqlDbType.NVarChar).Value = book.ISBN;
+                    cmd.Parameters.Add("@title", SqlDbType.NVarChar).Value = book.Title;
+                    cmd.Parameters.Add("@author", SqlDbType.NVarChar).Value = book.Author;
+                    cmd.Parameters.Add("@genre", SqlDbType.NVarChar).Value = book.Genre;
+                    cmd.Parameters.Add("@edition", SqlDbType.NVarChar).Value = book.Edition;
+                    cmd.Parameters.Add("@copies", SqlDbType.NVarChar).Value = book.Copies;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("User added Successfully!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error! " + ex.ToString());
+                }
             }
         }
 
         /******Method to modify records******/
-        public void Modify(string str0, string str1, string str2, string str3, string str4, string str5, string str6, string str7)
+        public void Modify(Book book)
         {
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                con.Open();
-                string mod = "update students set firstname='" + str1 + "', lastname='" + str2 + "',sex='" + str3 + "',dob='" + str4 + "',grade='" + str5 + "',address='" + str6 + "',contact='" + str7 + "' where id='" + Convert.ToInt32(str0) + "'";
-                MySqlCommand cmd = new MySqlCommand(mod, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error! " + ex.ToString());
+                try
+                {
+                    con.Open();
+                    string mod = "update Books set ISBN = @isbn, Title = @title, Author = @author, Genre = @genre, Edition = @edition, Copies = @copies where ID = @id";
+                    SqlCommand cmd = new SqlCommand(mod, con);
+                    cmd.Parameters.Add("@id", SqlDbType.Int).Value = book.ID;
+                    cmd.Parameters.Add("@isbn", SqlDbType.NVarChar).Value = book.ISBN;
+                    cmd.Parameters.Add("@title", SqlDbType.NVarChar).Value = book.Title;
+                    cmd.Parameters.Add("@author", SqlDbType.NVarChar).Value = book.Author;
+                    cmd.Parameters.Add("@genre", SqlDbType.NVarChar).Value = book.Genre;
+                    cmd.Parameters.Add("@edition", SqlDbType.NVarChar).Value = book.Edition;
+                    cmd.Parameters.Add("@copies", SqlDbType.NVarChar).Value = book.Copies;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    MessageBox.Show("Record(s) saved successfully!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error! " + ex.ToString());
+                }
             }
         }
 
         /******Method to delete record******/
-        public void Delete(string str1)
+        public void Delete(Book book)
         {
-            try
+            using (SqlConnection con = new SqlConnection(connectionString))
             {
-                con.Open();
-                string del = "delete from students where id='" + Convert.ToInt32(str1) + "'";
-                MySqlCommand cmd = new MySqlCommand(del, con);
-                cmd.ExecuteNonQuery();
-                con.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error! " + ex.ToString());
+                try
+                {
+                    con.Open();
+                    string del = "delete from Books where ID = @id";
+                    SqlCommand cmd = new SqlCommand(del, con);
+                    cmd.Parameters.Add("@id", SqlDbType.Int).Value = book.ID;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error! " + ex.ToString());
+                }
             }
         }
     }
