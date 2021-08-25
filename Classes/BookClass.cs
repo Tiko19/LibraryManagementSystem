@@ -21,7 +21,6 @@ namespace LibraryManagementSystem.Classes
             public string Author { get; set; }
             public string Genre { get; set; }
             public string Edition { get; set; }
-            public string Copies { get; set; }
         }
 
         /******Method to load database******/
@@ -49,21 +48,20 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to add record to database******/
-        public void BookAdd(Book book)
+        public void AddBook(Book book)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 try
                 {
                     con.Open();
-                    string addBook = "insert into Books(ISBN, Title, Author, Genre, Edition, Copies) values(@isbn, @title, @author, @genre, @edition, @copies)";
+                    string addBook = "insert into Books(ISBN, Title, Author, Genre, Edition) values(@isbn, @title, @author, @genre, @edition)";
                     SqlCommand cmd = new SqlCommand(addBook, con);
                     cmd.Parameters.Add("@isbn", SqlDbType.NVarChar).Value = book.ISBN;
                     cmd.Parameters.Add("@title", SqlDbType.NVarChar).Value = book.Title;
                     cmd.Parameters.Add("@author", SqlDbType.NVarChar).Value = book.Author;
                     cmd.Parameters.Add("@genre", SqlDbType.NVarChar).Value = book.Genre;
                     cmd.Parameters.Add("@edition", SqlDbType.NVarChar).Value = book.Edition;
-                    cmd.Parameters.Add("@copies", SqlDbType.NVarChar).Value = book.Copies;
                     cmd.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("User added Successfully!");
@@ -76,14 +74,14 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to modify records******/
-        public void Modify(Book book)
+        public void ModifyBook(Book book)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
                 try
                 {
                     con.Open();
-                    string mod = "update Books set ISBN = @isbn, Title = @title, Author = @author, Genre = @genre, Edition = @edition, Copies = @copies where ID = @id";
+                    string mod = "update Books set ISBN = @isbn, Title = @title, Author = @author, Genre = @genre, Edition = @edition where ID = @id";
                     SqlCommand cmd = new SqlCommand(mod, con);
                     cmd.Parameters.Add("@id", SqlDbType.Int).Value = book.ID;
                     cmd.Parameters.Add("@isbn", SqlDbType.NVarChar).Value = book.ISBN;
@@ -91,7 +89,6 @@ namespace LibraryManagementSystem.Classes
                     cmd.Parameters.Add("@author", SqlDbType.NVarChar).Value = book.Author;
                     cmd.Parameters.Add("@genre", SqlDbType.NVarChar).Value = book.Genre;
                     cmd.Parameters.Add("@edition", SqlDbType.NVarChar).Value = book.Edition;
-                    cmd.Parameters.Add("@copies", SqlDbType.NVarChar).Value = book.Copies;
                     cmd.ExecuteNonQuery();
                     con.Close();
                     MessageBox.Show("Record(s) saved successfully!");
@@ -104,7 +101,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to delete record******/
-        public void Delete(Book book)
+        public void DeleteBook(Book book)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {

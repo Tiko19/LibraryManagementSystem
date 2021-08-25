@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class RecordsMenu : Form
+    public partial class RecordsView : Form
     {
-        public RecordsMenu()
+        public RecordsView()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form a1 = new RecordsView();
-            a1.ShowDialog();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form a1 = new PendingBooks();
-            a1.ShowDialog();
+
         }
 
         private void button3_Click(object sender, EventArgs e)

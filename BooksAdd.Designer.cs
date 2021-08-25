@@ -34,7 +34,6 @@ namespace LibraryManagementSystem
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,14 +42,13 @@ namespace LibraryManagementSystem
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(240, 172);
+            this.label1.Location = new System.Drawing.Point(175, 173);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(61, 25);
             this.label1.TabIndex = 15;
@@ -60,7 +58,7 @@ namespace LibraryManagementSystem
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(240, 236);
+            this.label2.Location = new System.Drawing.Point(175, 237);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 25);
             this.label2.TabIndex = 16;
@@ -70,7 +68,7 @@ namespace LibraryManagementSystem
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(240, 306);
+            this.label3.Location = new System.Drawing.Point(175, 307);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(80, 25);
             this.label3.TabIndex = 17;
@@ -80,7 +78,7 @@ namespace LibraryManagementSystem
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(240, 375);
+            this.label4.Location = new System.Drawing.Point(175, 376);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 25);
             this.label4.TabIndex = 18;
@@ -90,21 +88,11 @@ namespace LibraryManagementSystem
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(240, 443);
+            this.label5.Location = new System.Drawing.Point(175, 444);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 25);
             this.label5.TabIndex = 19;
             this.label5.Text = "Edition:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(240, 517);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(79, 25);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Copies:";
             // 
             // label7
             // 
@@ -119,7 +107,7 @@ namespace LibraryManagementSystem
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(480, 619);
+            this.button1.Location = new System.Drawing.Point(441, 568);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 70);
             this.button1.TabIndex = 22;
@@ -130,7 +118,7 @@ namespace LibraryManagementSystem
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(657, 619);
+            this.button2.Location = new System.Drawing.Point(597, 568);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(120, 70);
             this.button2.TabIndex = 23;
@@ -141,7 +129,7 @@ namespace LibraryManagementSystem
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(418, 171);
+            this.textBox1.Location = new System.Drawing.Point(379, 173);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(350, 30);
             this.textBox1.TabIndex = 24;
@@ -149,7 +137,7 @@ namespace LibraryManagementSystem
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(418, 236);
+            this.textBox2.Location = new System.Drawing.Point(379, 238);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(350, 30);
             this.textBox2.TabIndex = 25;
@@ -157,7 +145,7 @@ namespace LibraryManagementSystem
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(418, 306);
+            this.textBox3.Location = new System.Drawing.Point(379, 308);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(350, 30);
             this.textBox3.TabIndex = 26;
@@ -165,7 +153,7 @@ namespace LibraryManagementSystem
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(418, 374);
+            this.textBox4.Location = new System.Drawing.Point(379, 376);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(350, 30);
             this.textBox4.TabIndex = 27;
@@ -173,25 +161,16 @@ namespace LibraryManagementSystem
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(418, 442);
+            this.textBox5.Location = new System.Drawing.Point(379, 444);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(350, 30);
             this.textBox5.TabIndex = 28;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(418, 516);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(350, 30);
-            this.textBox6.TabIndex = 29;
             // 
             // BooksAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 750);
-            this.Controls.Add(this.textBox6);
+            this.ClientSize = new System.Drawing.Size(945, 713);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
@@ -200,7 +179,6 @@ namespace LibraryManagementSystem
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -209,7 +187,7 @@ namespace LibraryManagementSystem
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BooksAdd";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Add Book";
+            this.Text = ";";
             this.Load += new System.EventHandler(this.BooksAdd_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -222,7 +200,6 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
@@ -231,6 +208,5 @@ namespace LibraryManagementSystem
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
     }
 }

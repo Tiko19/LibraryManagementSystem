@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace LibraryManagementSystem
 {
-    public partial class IssuedBooks : Form
+    public partial class PendingBooks : Form
     {
-        public IssuedBooks()
+        public PendingBooks()
         {
             InitializeComponent();
         }

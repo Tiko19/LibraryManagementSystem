@@ -123,12 +123,6 @@
     <Compile Include="BookRequest.Designer.cs">
       <DependentUpon>BookRequest.cs</DependentUpon>
     </Compile>
-    <Compile Include="IssuedBooks.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="IssuedBooks.Designer.cs">
-      <DependentUpon>IssuedBooks.cs</DependentUpon>
-    </Compile>
     <Compile Include="MembersMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,11 +147,23 @@
     <Compile Include="MembersView.Designer.cs">
       <DependentUpon>MembersView.cs</DependentUpon>
     </Compile>
+    <Compile Include="PendingBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PendingBooks.Designer.cs">
+      <DependentUpon>PendingBooks.cs</DependentUpon>
+    </Compile>
     <Compile Include="RecordsMenu.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RecordsMenu.Designer.cs">
       <DependentUpon>RecordsMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RecordsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordsView.Designer.cs">
+      <DependentUpon>RecordsView.cs</DependentUpon>
     </Compile>
     <Compile Include="SystemConfig.cs">
       <SubType>Form</SubType>
@@ -212,9 +218,6 @@
     <EmbeddedResource Include="BookRequest.resx">
       <DependentUpon>BookRequest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IssuedBooks.resx">
-      <DependentUpon>IssuedBooks.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="MembersMenu.resx">
       <DependentUpon>MembersMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -227,8 +230,14 @@
     <EmbeddedResource Include="MembersView.resx">
       <DependentUpon>MembersView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PendingBooks.resx">
+      <DependentUpon>PendingBooks.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RecordsMenu.resx">
       <DependentUpon>RecordsMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordsView.resx">
+      <DependentUpon>RecordsView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SystemConfig.resx">
       <DependentUpon>SystemConfig.cs</DependentUpon>

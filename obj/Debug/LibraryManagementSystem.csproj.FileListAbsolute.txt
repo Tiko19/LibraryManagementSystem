@@ -9,7 +9,6 @@ C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagem
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.pdb
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Welcome.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.Login.resources
-C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.IssuedBooks.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.SystemConfig.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BooksAdd.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BooksView.resources
@@ -47,3 +46,5 @@ C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\bin\Debug\System.Memory.
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.csproj.CopyComplete
+C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.PendingBooks.resources
+C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.RecordsView.resources
