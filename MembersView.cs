@@ -17,24 +17,71 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
+        private void MembersView_Load(object sender, EventArgs e)
+        {
+            refresh();
+        }
+
+        private void refresh()
+        {
+            BindingSource bindingSource1 = new BindingSource();
+            Classes.MemberClass tmp = new Classes.MemberClass();
+            dataGridView1.DataSource = bindingSource1;
+            bindingSource1.DataSource = tmp.GetDataSet();
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form a1 = new MembersAdd();
+            a1.ShowDialog();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Classes.MemberClass tmp = new Classes.MemberClass();
+            Classes.MemberClass.Member member  = new Classes.MemberClass.Member();
 
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                tmp.MemberModify(member);
+            }
+            refresh();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Classes.MemberClass tmp = new Classes.MemberClass();
+            Classes.MemberClass.Member member = new Classes.MemberClass.Member();
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
 
+            foreach (DataGridViewRow row in dataGridView1.SelectedRows)
+            {
+                member.ID = Convert.ToInt32(row.Cells[0].Value.ToString());
+                tmp.MemberDelete(member);
+                refresh();
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string searchVal = textBox1.Text;
+
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.ClearSelection();
+
+            foreach (DataGridViewRow row in dataGridView1.Rows)
+            {
+                if (row.Cells[0].Value.ToString().Equals(searchVal))
+                {
+                    row.Selected = true;
+                    break;
+                }
+            }
         }
     }
 }

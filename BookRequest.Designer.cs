@@ -124,6 +124,7 @@ namespace LibraryManagementSystem
             this.Name = "BookRequest";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Issue Book";
+            this.Load += new System.EventHandler(this.BookRequest_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

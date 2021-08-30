@@ -40,7 +40,6 @@ namespace LibraryManagementSystem
                 book.Edition = textBox5.Text;
 
                 tmp.AddBook(book);
-                MessageBox.Show("Book added successfully!");
                 reset();
             }
             else

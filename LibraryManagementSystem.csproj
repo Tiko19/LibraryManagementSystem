@@ -135,12 +135,6 @@
     <Compile Include="MembersAdd.Designer.cs">
       <DependentUpon>MembersAdd.cs</DependentUpon>
     </Compile>
-    <Compile Include="MembersModify.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MembersModify.Designer.cs">
-      <DependentUpon>MembersModify.cs</DependentUpon>
-    </Compile>
     <Compile Include="MembersView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,9 +217,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MembersAdd.resx">
       <DependentUpon>MembersAdd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MembersModify.resx">
-      <DependentUpon>MembersModify.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MembersView.resx">
       <DependentUpon>MembersView.cs</DependentUpon>

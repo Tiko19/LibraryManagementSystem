@@ -47,7 +47,7 @@ namespace LibraryManagementSystem
                 }
                 else
                 {
-                    userClass.UserAdd(user);
+                    userClass.AddUser(user);
                 }
             }
             reset();

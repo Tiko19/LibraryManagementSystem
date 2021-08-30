@@ -46,8 +46,35 @@ namespace LibraryManagementSystem.Classes
             }
         }
 
+        /******Method to check for member******/
+        public bool CheckMember(Member member)
+        {
+            bool result;
+
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                string checkID = "select * from Members where NationalID = @nationalID";
+                SqlCommand cmd = new SqlCommand(checkID, con);
+                cmd.Parameters.Add("@nationalID", SqlDbType.NVarChar).Value = member.NationalID;
+                SqlDataReader sdr = cmd.ExecuteReader();
+
+                if (sdr.Read())
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                }
+                con.Close();
+                return result;
+            }
+
+        }
+
         /******Method to add record to database******/
-        public void MemberAdd(Member member)
+        public void AddMember(Member member)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -72,7 +99,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to modify records******/
-        public void Modify(Member member)
+        public void MemberModify(Member member)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -98,7 +125,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to delete record******/
-        public void Delete(Member member)
+        public void MemberDelete(Member member)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {

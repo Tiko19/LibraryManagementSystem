@@ -64,7 +64,7 @@ namespace LibraryManagementSystem.Classes
                     cmd.Parameters.Add("@edition", SqlDbType.NVarChar).Value = book.Edition;
                     cmd.ExecuteNonQuery();
                     con.Close();
-                    MessageBox.Show("User added Successfully!");
+                    MessageBox.Show("Book added successfully!");
                 }
                 catch (Exception ex)
                 {
@@ -113,6 +113,7 @@ namespace LibraryManagementSystem.Classes
                     cmd.Parameters.Add("@id", SqlDbType.Int).Value = book.ID;
                     cmd.ExecuteNonQuery();
                     con.Close();
+                    MessageBox.Show("Record(s) deleted successfully!");
                 }
                 catch (Exception ex)
                 {

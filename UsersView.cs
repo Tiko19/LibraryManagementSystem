@@ -79,10 +79,9 @@ namespace LibraryManagementSystem
                     user.Username = row.Cells[1].Value.ToString();
                     user.Password = row.Cells[2].Value.ToString();
                     user.Role = row.Cells[3].Value.ToString();
-                    temp.Delete(user);
+                    temp.UserDelete(user);
                     reload();
                 }
-                MessageBox.Show("Record(s) deleted successfully!");
             }
             catch (Exception ex)
             {

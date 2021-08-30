@@ -45,7 +45,6 @@ namespace LibraryManagementSystem
             {
                 tmp.ModifyBook(book);
             }
-            MessageBox.Show("Records saved successfully!");
             refresh();
         }
 
@@ -61,7 +60,7 @@ namespace LibraryManagementSystem
                 tmp.DeleteBook(book);
                 refresh();
             }
-            MessageBox.Show("Record(s) deleted successfully!");
+            
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -71,8 +70,6 @@ namespace LibraryManagementSystem
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Classes.BookClass tmp = new Classes.BookClass();
-            Classes.BookClass.Book book = new Classes.BookClass.Book();
             string searchVal = textBox1.Text;
 
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;

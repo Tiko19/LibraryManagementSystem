@@ -53,7 +53,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to add record to database******/
-        public void Add(Record record)
+        public void RecordAdd(Record record)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -84,7 +84,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to modify records******/
-        public void Modify(Record record)
+        public void RecordModify(Record record)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {
@@ -116,7 +116,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /******Method to delete record******/
-        public void Delete(Record record)
+        public void RecordDelete(Record record)
         {
             using (SqlConnection con = new SqlConnection(connectionString))
             {

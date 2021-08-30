@@ -125,7 +125,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /*************************Method to add record to database********************/
-        public void UserAdd(User user)
+        public void AddUser(User user)
         {
             using(SqlConnection con = new SqlConnection(connectionString))
             {
@@ -150,7 +150,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /****************************Method to delete record*******************************/
-        public void Delete(User user)
+        public void UserDelete(User user)
         {
             using(SqlConnection con = new SqlConnection(connectionString))
             {
@@ -162,6 +162,7 @@ namespace LibraryManagementSystem.Classes
                     cmd.Parameters.Add("@id", SqlDbType.Int).Value = user.ID;
                     cmd.ExecuteNonQuery();
                     con.Close();
+                    MessageBox.Show("Record(s) deleted successfully!");
                 }
                 catch (Exception ex)
                 {
@@ -171,7 +172,7 @@ namespace LibraryManagementSystem.Classes
         }
 
         /*************************************Method to modify records****************************/
-        public void Modify(User user)
+        public void UserModify(User user)
         {
             using(SqlConnection con = new SqlConnection(connectionString))
             {
