@@ -55,7 +55,7 @@ namespace LibraryManagementSystem
                     user.Username = row.Cells[1].Value.ToString();
                     user.Password = row.Cells[2].Value.ToString();
                     user.Role = row.Cells[3].Value.ToString();
-                    temp.Modify(user);
+                    temp.UserModify(user);
                     reload();
                 }
             }

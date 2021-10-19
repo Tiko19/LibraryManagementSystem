@@ -13,7 +13,6 @@ C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagem
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BooksAdd.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.BooksView.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.MembersAdd.resources
-C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.MembersModify.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.MembersView.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.UsersAccounts.resources
 C:\Users\Terry\Documents\GitHub\LibraryManagementSystem\obj\Debug\LibraryManagementSystem.UsersAdd.resources

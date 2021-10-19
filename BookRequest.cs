@@ -16,23 +16,29 @@ namespace LibraryManagementSystem
         {
             InitializeComponent();
         }
-        
+
+        private List<int> memID;
+        private List<string> isbn;
+
         private void BookRequest_Load(object sender, EventArgs e)
         {
             reset();
-            Classes.BookClass bookClass = new Classes.BookClass();
-            Classes.MemberClass memberClass = new Classes.MemberClass();
-            Classes.BookClass.Book book = new Classes.BookClass.Book();
-            Classes.MemberClass.Member member = new Classes.MemberClass.Member();
-            
-            BindingSource bindingSource1 = new BindingSource();
-            BindingSource bindingSource2 = new BindingSource();
-            comboBox1.DataSource = bindingSource1;
-            comboBox2.DataSource = bindingSource2;
-            this.comboBox1.ValueMember = "ISBN";
-            this.comboBox2.ValueMember = "ID";
-            bindingSource1.DataSource = bookClass.GetDataSet();
-            bindingSource2.DataSource = memberClass.GetDataSet();
+            comboValues();
+            memID = new List<int>();
+            isbn = new List<string>();
+        }
+
+        private void comboValues()
+        {
+            for (int i = 0; i < memID.Count; i++)
+            {
+                comboBox1.Items.Add(memID[i]);
+            }
+
+            for (int j = 0; j < isbn.Count; j++)
+            {
+                comboBox2.Items.Add(isbn[j]);
+            }
         }
 
         private void reset()

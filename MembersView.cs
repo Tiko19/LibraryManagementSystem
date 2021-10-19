@@ -30,11 +30,11 @@ namespace LibraryManagementSystem
             bindingSource1.DataSource = tmp.GetDataSet();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form a1 = new MembersAdd();
-            a1.ShowDialog();
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    Form a1 = new MembersAdd();
+        //    a1.ShowDialog();
+        //}
 
         private void button2_Click(object sender, EventArgs e)
         {

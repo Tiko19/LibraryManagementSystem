@@ -46,6 +46,39 @@ namespace LibraryManagementSystem.Classes
             }
         }
 
+        public List<int> getMemberID()
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    List<int> result = new List<int>();
+                    string load = "select ID from Books";
+                    SqlCommand cmd = new SqlCommand(load, con);
+                    con.Open();
+                    SqlDataReader rdr = cmd.ExecuteReader();
+
+                    if (rdr.HasRows)
+                    {
+                        while (rdr.Read())
+                        {
+                            Member member = new Member();
+                            member.ID = rdr.GetInt32(0);
+
+                            result.Add(member.ID);
+                        }
+                        con.Close();
+                    }
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    return null;
+                }
+            }
+        }
+
         /******Method to check for member******/
         public bool CheckMember(Member member)
         {

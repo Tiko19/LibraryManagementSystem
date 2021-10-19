@@ -47,6 +47,40 @@ namespace LibraryManagementSystem.Classes
             }
         }
 
+        /*******Method to load book ISBN numbers*******/
+        public List<string> getISBN()
+        {
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    List<string> result = new List<string>();
+                    string load = "select ISBN from Books";
+                    SqlCommand cmd = new SqlCommand(load, con);
+                    con.Open();
+                    SqlDataReader rdr = cmd.ExecuteReader();
+
+                    if (rdr.HasRows)
+                    {
+                        while (rdr.Read())
+                        {
+                            Book book = new Book();
+                            book.ISBN = rdr.GetString(0);
+
+                            result.Add(book.ISBN);
+                        }
+                        con.Close();
+                    }
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                    return null;
+                }
+            }
+        }
+
         /******Method to add record to database******/
         public void AddBook(Book book)
         {
